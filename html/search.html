@@ -1,7 +1,7 @@
 <h3>Buscar Cliente</h3>
 
 <div class="form-group">
-  <input type="text" class="form-control" id="nome" placeholder="Nome">
+  <input type="text" class="form-control" id="procuraNome" placeholder="Nome">
 </div>
 
 <table class="table table-hover">
@@ -14,13 +14,17 @@
       <th scope="col"></th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><button type="button" class="btn btn-outline-dark">Editar</button></td>
-      <td><button type="button" class="btn btn-outline-dark">Remover</button></td>
-    </tr>
+  <tbody id="searchResults">
+   
   </tbody>
 </table>
+
+<template id="rowTemplate">
+   <tr>
+    <th class="IDcliente"   scope="row"></th>
+    <td class="nomeCliente"></td>
+    <td class="contatoCliente"></td>
+    <td><button type="button" class="btn btn-outline-dark">Editar</button></td>
+    <td><button type="button" class="btn btn-outline-dark">Remover</button></td>
+  </tr>
+</template>
